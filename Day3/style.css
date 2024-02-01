@@ -1,5 +1,6 @@
 body{
     font-family: 'Inter', sans-serif;
+    margin: 0;
 }
 .container{
     margin: 0px 110px;
@@ -117,6 +118,9 @@ h1{
     font-size: 36px;
     font-weight: 800;
 }
+.about-content{
+    padding: 60px 12px 0px;
+}
 .title{
     display: inline-block;
     font-weight: 700;
@@ -163,6 +167,12 @@ h1{
     display: inline-block;
     width: 50%;
 }
+.other-skill{
+    width: 49%;
+}
+.my-skill{
+    display: inline-block; padding-bottom: 7px;border-bottom: 3px solid #f26464;
+}
 .item-skill{
     display: inline-block;
     border: 1px solid #D7D7D7;
@@ -173,6 +183,10 @@ h1{
 }
 .experience{
     margin-bottom: 120px;
+}
+.experience h2{
+    display: inline-block;  padding-bottom: 7px;border-bottom: 3px solid #f26464;
+    margin-left: 12px;
 }
 .work-exp{
     display: flex;
@@ -211,6 +225,10 @@ h1{
     font-weight: 300;
     margin-bottom: 20px;
 }
+.project-latest h2{
+    display: inline-block; padding-bottom: 7px;border-bottom: 3px solid #f26464;
+    margin-left: 12px;
+}
 .project{
     background-color: #F6F8FA;
     display: flex;
@@ -220,6 +238,9 @@ h1{
 }
 .sect-1{
     width: 58.33%;
+}
+.sect-11{
+    padding-right: 42px;
 }
 .sect-2{
     width: 41.67%;
@@ -292,6 +313,120 @@ h1{
 }
 .footer span a:hover{
     color: #F26464;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 540px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .name-dev{
+        display: none;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+    .section-des{
+        width: 100%;
+        height: 100%;
+        padding-left: 0px;
+    }
+    .section-des h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .number-act{
+        font-size: 30px;
+    }
+    .item-act{
+        font-size: 14px;
+    }
+    .download{
+        padding-bottom: 0;
+    }
+    .about-content{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 60px;
+    }
+    .introduce{
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .resume{
+        padding: 11px 10px;
+    }
+    .skills{
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    .about-skill{
+        width: 100%;
+    }
+    .my-skill{
+        font-size: 16px;
+    }
+    .item-skill{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .work-exp{
+        display: block;
+    }
+    .project-latest h2{
+        font-size: 16px;
+    }
+    .project{
+        display: block;
+    }
+    .sect-1{
+        width: 100%;
+        height: 100%;
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+    .sect-2{
+        width: 100%;
+        height: 100%;
+    }
+    .des-project{
+        padding-right: 0px;
+    }
+    .project{
+        padding: 30px;
+    }
+    .button{
+        padding: 11px 10px
+    }
+    .experience h2{
+        font-size: 16px;
+    }
+    .time-w{
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+    .name-comp{
+        margin-top: 0;
+    }
+    .pos-w{
+        margin-bottom: 0;
+    }
+    .des-w{
+        margin-top: 0;
+    }
+    .sect-w{
+        margin-bottom: 40px;
+    }
+    .experience{
+        margin-bottom: 40px;
+    }
+
+
 }
 
 
