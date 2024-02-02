@@ -425,7 +425,13 @@ h1{
     .experience{
         margin-bottom: 40px;
     }
-
+    .header{
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 
 }
 
