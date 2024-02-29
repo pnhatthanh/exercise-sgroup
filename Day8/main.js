@@ -31,7 +31,7 @@ function findIndex(arr,functionSub){
             return i;
         }
     }
-    return 0;
+    return -1;
 }
 
 //Ham reduce
