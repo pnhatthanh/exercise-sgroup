@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <label>Username</label>
+    <input type="text" id="username">
+    <br>
+    <label>Password</label>
+    <input type="password" id="password">
+    <button type="submit" id="login">Submit</button>
+    <a href="register.html">Register</a>
+</body>
+<script>
+ document.getElementById("login").addEventListener('click', login);
+function login() {
+        var users = [];
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        if (localStorage.getItem('users')) {
+            users = JSON.parse(localStorage.getItem('users'));
+        }
+        for(let u of users){
+            if(u.username==username&&u.password==password){
+                window.location.href='./success.html';
+                return;
+            }
+        }
+        window.location.href='./error.html';
+}
+</script>
+</html>

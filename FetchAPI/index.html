@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;" id="title">Loading...</h1>
+    <div id="table"></div>
+
+</body>
+</html>
+<script>
+    setTimeout(()=>{
+        const title=document.getElementById("title");
+        title.innerText="List User"
+    },5000);
+    fetch("s").then(response=>{
+        return response.json();
+    })
+    .then(res=>{
+        const table=document.getElementById("table");
+        const code="<table><tr><th>Name</th><th>Address</th></tr>";
+        res.forEach(element => {
+            code+=`<tr><tr><td>${}</td></tr>`;
+        });
+        code+="</table>"
+        table.innerHTML=code;
+    })
+    .catch(error=>{
+        console.log("Error"+error);
+    })  
+</script>
